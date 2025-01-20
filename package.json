@@ -2,7 +2,9 @@
   "name": "df-react",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://Lisa0o.github.io/Lisa_df",
   "dependencies": {
+    "gh-pages": "^6.3.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-router": "^7.1.3",
@@ -12,7 +14,9 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
